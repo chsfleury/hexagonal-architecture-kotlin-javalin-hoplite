@@ -6,8 +6,7 @@ swapi:
   baseUrl: https://swapi.info/api/
 
 database:
-  username: sa
-  password:
-  url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;MODE=MySQL
-  driver: org.h2.Driver
-  dialect: H2
+  username: rebels_rescue
+  url: jdbc:mysql://localhost:3306/rebels_rescue?allowMultiQueries=true
+  driver: com.mysql.cj.jdbc.Driver
+  dialect: MYSQL
