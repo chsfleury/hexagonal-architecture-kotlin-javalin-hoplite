@@ -1,0 +1,21 @@
+<configuration>
+
+    <!-- Définit le niveau de journalisation global pour l'application -->
+    <root level="INFO">
+        <!-- Appender Console -->
+        <appender-ref ref="CONSOLE" />
+    </root>
+
+    <!-- Appender pour envoyer les logs vers la console -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- Définit la mise en forme des logs -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Configuration du niveau DEBUG pour un package spécifique -->
+    <logger name="org.pac4j" level="DEBUG" />
+
+
+</configuration>

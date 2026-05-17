@@ -1,0 +1,13 @@
+
+server:
+  port: 8081
+
+swapi:
+  baseUrl: http://localhost:8082/api
+
+database:
+  username: sa
+  password:
+  url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;MODE=MySQL
+  driver: org.h2.Driver
+  dialect: H2
