@@ -23,7 +23,10 @@ This project is inspired by [hexagonal-architecture-java-springboot](https://git
 
 The code is split around hexagonal architecture boundaries:
 
-- `domain`: business model, ports and use cases
+- `domain/{model}/model`: domain objects
+- `domain/{model}/service`: domain services
+- `domain/{model}/api`: primary ports . Use cases exposed by the domain
+- `domain/{model}/spi`: secondary ports. Dependencies required by the domain
 - `infra/api`: HTTP controllers, DTOs and API resources
 - `infra/client`: external SWAPI adapter
 - `infra/persistence`: database adapter
@@ -54,6 +57,14 @@ mvn exec:java -Dexec.mainClass=rebelsrescue.infra.StarwarsRebelsRescueApplicatio
 ```
 
 The application uses `src/main/resources/application.yml` by default.
+
+You can also pass a configuration file path as the first launch argument, for example to use a file outside the classpath:
+
+```bash
+mvn exec:java \
+  -Dexec.mainClass=rebelsrescue.infra.StarwarsRebelsRescueApplication \
+  -Dexec.args="/path/to/application.yml"
+```
 
 Default server port:
 
@@ -100,7 +111,8 @@ curl http://localhost:8080/rescueFleets/{uuid}
 Configuration is loaded with Hoplite from:
 
 - environment variables
-- `application.yml`
+- `/application.yml` by default
+- the configuration file path passed as the first launch argument
 
 Default configuration:
 
