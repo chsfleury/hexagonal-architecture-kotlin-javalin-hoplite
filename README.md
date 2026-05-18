@@ -17,6 +17,7 @@ This project is inspired by [hexagonal-architecture-java-springboot](https://git
 - Flyway for database migrations
 - HikariCP for datasource management
 - H2 for local/test database usage
+- Jib Maven Plugin for Docker image builds
 - JUnit 5, AssertJ, JSONAssert and WireMock for tests
 
 ## Architecture
@@ -49,6 +50,45 @@ mvn test
 ```bash
 mvn package
 ```
+
+## Docker Image with Jib
+
+The project uses `jib-maven-plugin` to build a Docker image without a Dockerfile.
+
+The configured base image is:
+
+```text
+amazoncorretto:25
+```
+
+Build the project image into your local Docker daemon:
+
+```bash
+mvn compile jib:dockerBuild -Dimage=hexagonal-architecture-kotlin-javalin-hoplite:local
+```
+
+Run the image:
+
+```bash
+docker run --rm -p 8080:8080 hexagonal-architecture-kotlin-javalin-hoplite:local
+```
+
+You can also pass an external configuration file to the container. The file must be mounted in the container, then passed as the application argument:
+
+```bash
+docker run --rm -p 8080:8080 \
+  -v /path/to/application.yml:/config/application.yml:ro \
+  hexagonal-architecture-kotlin-javalin-hoplite:local \
+  /config/application.yml
+```
+
+To build and push an image to a registry:
+
+```bash
+mvn compile jib:build -Dimage=registry.example.com/rebels-rescue:1.0.0
+```
+
+For private registries, authenticate with Docker first or configure the credential helper used by Jib.
 
 ## Run the Application
 
