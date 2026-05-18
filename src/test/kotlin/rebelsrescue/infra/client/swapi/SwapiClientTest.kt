@@ -7,7 +7,7 @@ import com.github.tomakehurst.wiremock.junit5.WireMockRuntimeInfo
 import com.github.tomakehurst.wiremock.junit5.WireMockTest
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
-import rebelsrescue.domain.fleet.StarShip
+import rebelsrescue.domain.fleet.model.StarShip
 import rebelsrescue.infra.configuration.SwapiConfig
 import rebelsrescue.infra.utils.getFileContent
 import java.math.BigDecimal

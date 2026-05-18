@@ -1,4 +1,4 @@
-package rebelsrescue.domain.fleet
+package rebelsrescue.domain.fleet.model
 
 import java.util.UUID
 

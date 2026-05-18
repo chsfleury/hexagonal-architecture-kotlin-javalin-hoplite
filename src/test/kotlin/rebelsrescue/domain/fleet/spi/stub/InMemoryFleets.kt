@@ -1,6 +1,6 @@
 package rebelsrescue.domain.fleet.spi.stub
 
-import rebelsrescue.domain.fleet.Fleet
+import rebelsrescue.domain.fleet.model.Fleet
 import rebelsrescue.domain.fleet.spi.Fleets
 import java.util.UUID
 

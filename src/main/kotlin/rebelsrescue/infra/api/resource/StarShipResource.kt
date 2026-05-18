@@ -1,6 +1,6 @@
 package rebelsrescue.infra.api.resource
 
-import rebelsrescue.domain.fleet.StarShip
+import rebelsrescue.domain.fleet.model.StarShip
 
 data class StarShipResource(
     val name: String,

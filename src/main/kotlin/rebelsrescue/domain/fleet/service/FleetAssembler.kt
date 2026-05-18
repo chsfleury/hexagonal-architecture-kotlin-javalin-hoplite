@@ -1,6 +1,8 @@
-package rebelsrescue.domain.fleet
+package rebelsrescue.domain.fleet.service
 
 import rebelsrescue.domain.fleet.api.AssembleAFleetUseCase
+import rebelsrescue.domain.fleet.model.Fleet
+import rebelsrescue.domain.fleet.model.StarShip
 import rebelsrescue.domain.fleet.spi.Fleets
 import rebelsrescue.domain.fleet.spi.StarShipInventory
 import java.math.BigDecimal

@@ -7,8 +7,8 @@ import org.http4k.core.Status
 import org.http4k.lens.contentType
 import org.junit.jupiter.api.Test
 import org.skyscreamer.jsonassert.JSONAssert
-import rebelsrescue.domain.fleet.Fleet
-import rebelsrescue.domain.fleet.StarShip
+import rebelsrescue.domain.fleet.model.Fleet
+import rebelsrescue.domain.fleet.model.StarShip
 import java.math.BigDecimal
 
 class RescueFleetControllerTest: AbstractControllerTest() {

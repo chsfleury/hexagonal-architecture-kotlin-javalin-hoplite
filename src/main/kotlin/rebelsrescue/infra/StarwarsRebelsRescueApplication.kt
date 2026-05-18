@@ -32,9 +32,10 @@ class StarwarsRebelsRescueApplication(
     companion object {
         @JvmStatic
         fun main(args: Array<String>) {
+            val propertySource = args.firstOrNull() ?: "/application.yml"
             StarwarsRebelsRescueApplication(
                 DefaultApplicationProfile(
-                    Config("/application.yml")
+                    Config(propertySource)
                 )
             ).start()
         }

@@ -1,6 +1,6 @@
 package rebelsrescue.infra.api.resource
 
-import rebelsrescue.domain.fleet.Fleet
+import rebelsrescue.domain.fleet.model.Fleet
 import java.util.UUID
 
 data class FleetResource(

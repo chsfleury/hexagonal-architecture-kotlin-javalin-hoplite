@@ -6,7 +6,7 @@ import org.http4k.client.JavaHttpClient
 import org.http4k.core.HttpHandler
 import org.http4k.core.Method
 import org.http4k.core.Request
-import rebelsrescue.domain.fleet.StarShip
+import rebelsrescue.domain.fleet.model.StarShip
 import rebelsrescue.domain.fleet.spi.StarShipInventory
 import rebelsrescue.infra.client.swapi.model.SwapiResponse
 import rebelsrescue.infra.client.swapi.model.SwapiStarShip

@@ -3,8 +3,8 @@ package rebelsrescue.infra.persistence.fleet
 import org.jooq.DSLContext
 import rebelsrescue.db.tables.records.FleetStarshipsRecord
 import rebelsrescue.db.tables.references.FLEET_STARSHIPS
-import rebelsrescue.domain.fleet.Fleet
-import rebelsrescue.domain.fleet.StarShip
+import rebelsrescue.domain.fleet.model.Fleet
+import rebelsrescue.domain.fleet.model.StarShip
 import rebelsrescue.domain.fleet.spi.Fleets
 import java.math.BigDecimal
 import java.util.UUID

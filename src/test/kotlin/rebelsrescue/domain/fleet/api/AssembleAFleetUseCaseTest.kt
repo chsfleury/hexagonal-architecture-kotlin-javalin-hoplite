@@ -3,10 +3,10 @@ package rebelsrescue.domain.fleet.api
 import org.assertj.core.api.Assertions.assertThat
 import org.assertj.core.api.Condition
 import org.junit.jupiter.api.Test
-import rebelsrescue.domain.fleet.Fleet
-import rebelsrescue.domain.fleet.FleetAssembler
-import rebelsrescue.domain.fleet.FleetAssembler.Companion.MINIMAL_CARGO_CAPACITY
-import rebelsrescue.domain.fleet.StarShip
+import rebelsrescue.domain.fleet.model.Fleet
+import rebelsrescue.domain.fleet.service.FleetAssembler
+import rebelsrescue.domain.fleet.service.FleetAssembler.Companion.MINIMAL_CARGO_CAPACITY
+import rebelsrescue.domain.fleet.model.StarShip
 import rebelsrescue.domain.fleet.spi.Fleets
 import rebelsrescue.domain.fleet.spi.StarShipInventory
 import rebelsrescue.domain.fleet.spi.stub.InMemoryFleets

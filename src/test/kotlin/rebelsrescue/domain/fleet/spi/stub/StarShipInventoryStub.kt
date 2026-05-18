@@ -1,6 +1,6 @@
 package rebelsrescue.domain.fleet.spi.stub
 
-import rebelsrescue.domain.fleet.StarShip
+import rebelsrescue.domain.fleet.model.StarShip
 import rebelsrescue.domain.fleet.spi.StarShipInventory
 import java.math.BigDecimal
 

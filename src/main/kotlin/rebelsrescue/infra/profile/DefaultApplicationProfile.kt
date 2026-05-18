@@ -1,7 +1,7 @@
 package rebelsrescue.infra.profile
 
 import org.jooq.DSLContext
-import rebelsrescue.domain.fleet.FleetAssembler
+import rebelsrescue.domain.fleet.service.FleetAssembler
 import rebelsrescue.domain.fleet.api.AssembleAFleetUseCase
 import rebelsrescue.domain.fleet.spi.Fleets
 import rebelsrescue.domain.fleet.spi.StarShipInventory
